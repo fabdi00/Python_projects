@@ -24,17 +24,17 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.") 
 
 
-L_or_R = input("do you want to go left or right? Choose L or R: \n").lower()
+L_or_R = input("do you want to go left or right? Choose L or R:\n").lower()
 
 if L_or_R == "r":
     print("Game over")
 else:
-    S_or_W = input("do you want to swim or wait? Choose S or W: \n").lower()
-    if S_or_W == "s":
-        print("Game Over")
-    else:
-        door = input("choose door color: Red, Blue, Yellow: \n ").lower()
-        if door == "Blue" or door == "Red":
-            print("game over")
-        else:
-            print("you win")
+    S_or_W = input("do you want to swim or wait? Choose S or W:\n").lower()
+if S_or_W == "s":
+  print("Game Over")
+else:
+  door = input("choose door color: Red, Blue, Yellow:\n").lower()
+  if door == "Blue" or door == "Red":
+    print("game over")
+  else:
+    print("you win")
